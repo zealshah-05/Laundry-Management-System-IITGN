@@ -1,0 +1,181 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #37517e;
+}
+
+/*-----------------Login-Page------------------*/
+.login-container {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 115vh
+}
+.login-card {
+  width : 300px;
+  margin-bottom: 2rem;
+}
+.img-1 {
+  position : absolute;
+  left : 600px;
+  top : 80px;
+}
+h3 {
+  font-family : Helvetica;
+  padding-top: 0.25rem;
+  border-bottom: solid 1px;
+  padding-bottom: 0.25rem;
+  color: #301E67;
+  }
+/*-----------------Status-Page------------------*/
+.status-container-2 {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 1vh; 
+}
+.status-container-1 {
+  color : white; 
+  display: flex;
+  height : 50vh;
+  align-items: center;
+  justify-content: center
+}
+.status-img {
+  position : absolute;
+  left : 30px;
+  top : 15px;
+}
+.text {
+  font-size: 20px;
+  padding-left: 15px;
+}
+/*-----------------Register-Page------------------*/
+.register-container {
+  padding-top : 15px;
+  width : 500px;
+  align-items : center;
+  justify-content : center;
+  height : 90vh;
+}
+/*-----------------Clothes-Page------------------*/
+.clothes-container-2 {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 0vh; 
+}
+.clothes-container-1 {
+  color : white; 
+  display: flex;
+  height : 50vh;
+  align-items: center;
+  justify-content: center
+}
+.clothes-img {
+  position : absolute;
+  left : 620px;
+  top : 80px;
+}
+/*-----------------Students-Page------------------*/
+.student-row {
+  font-weight: bold;
+}
+.student-img {
+  position : absolute;
+  left : 425px;
+  top : 80px;
+}
+.student-container-1 {
+  color : white; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.text {
+  font-size: 20px;
+  padding-left: 15px;
+}
+/*-----------------Hostel schedule-Page------------------*/
+.container{
+  margin-top: 280px;
+  margin-bottom: 40px !important;
+}
+.schedule-row {
+  font-weight: bold;
+}
+.schedule-container-2 {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 0; 
+}
+.schedule-container-1 {
+  margin: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color : white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.schedule-img {
+  position : absolute;
+  left : 30px;
+  top : 15px;
+}
+.image {
+  position : absolute;
+  left : 675px;
+  top : 80px;
+  margin: auto;
+  text-align: center;
+}
+.text {
+  font-size: 5px;
+  padding-left: 5px;
+}
+/*-----------------Clothes-Page------------------*/
+.clothes-container {
+  color : white; 
+  padding-top: 10px;
+}
+/*-----------------Complaint_status-Page------------------*/
+.container-1{
+  margin-top: 50px;
+  margin-bottom: 40px !important;
+}
+.complaint-row {
+  font-weight: bold;
+}
+.complaint-container-2 {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 0; 
+}
+.complaint-container-1 {
+  margin: 200px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  color : white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.complaint-img {
+  position : absolute;
+  left : 15px;
+  top : 0px;
+}
+.complaint-image {
+  position : absolute;
+  left : 675px;
+  top : 80px;
+  margin: auto;
+  text-align: center;
+}
+.text {
+  font-size: 5px;
+  padding-left: 5px;
+}
