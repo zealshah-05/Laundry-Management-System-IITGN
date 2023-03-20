@@ -106,7 +106,15 @@ the status got changed for the record of date "2023-03-19"
 ![Finally washed](https://user-images.githubusercontent.com/84655836/226213555-ef70adeb-27ed-4ebf-afbf-f442fe7bf2d2.jpeg)
 
 ### 4. Rename: 
-Our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.
+Before Rename:\
+![Before Rename](https://user-images.githubusercontent.com/84655836/226409807-dc2b5972-44ba-4bec-999f-fdffade07a93.jpeg)
+![Before rename 2](https://user-images.githubusercontent.com/84655836/226409804-bc30c038-00f4-4005-8579-61319e76ff82.jpeg)
+
+After Rename:\
+![After rename 1](https://user-images.githubusercontent.com/84655836/226409803-594a4a4c-bf8f-40d4-9024-7515ec0ef867.jpeg)
+![After rename 2](https://user-images.githubusercontent.com/84655836/226409797-8abda2bc-48f5-4875-b1fb-8f96bd8d374f.jpeg)
+
+**Though our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.**
 
 ### 5. For where clause:
 
