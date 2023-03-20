@@ -209,6 +209,21 @@ the status got changed for the record of date "2023-03-19"
 ![Finally washed](https://user-images.githubusercontent.com/84655836/226213555-ef70adeb-27ed-4ebf-afbf-f442fe7bf2d2.jpeg)
 
 ### 4. Rename: 
+
+#### Dummy Rename Query 
+
+- Before Rename
+
+![WhatsApp Image 2023-03-20 at 23 48 16](https://user-images.githubusercontent.com/92508807/226431806-1a25af12-6383-4aec-97ac-56b318dffbbb.jpg)
+
+![Rena](https://user-images.githubusercontent.com/92508807/226431858-0e168685-2902-4f37-8210-cb6524a4111f.jpg)
+
+- After Rename
+
+![WhatsApp Image 2023-03-20 at 23 48 31](https://user-images.githubusercontent.com/92508807/226432017-2760b7ec-92ed-4016-b155-4daf814e4da8.jpg)
+
+![WhatsApp Image 2023-03-20 at 23 48 32](https://user-images.githubusercontent.com/92508807/226432050-1bc4f738-4255-4b83-95fe-89986a72a7fb.jpg)
+
 Our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.
 
 ### 5. For where clause:
