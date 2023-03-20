@@ -16,7 +16,7 @@ app.secret_key = 'ylaundry_management_system'
 
 app.config['MYSQL_HOST'] = '127.0.0.1'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'mbri29miqu'
+app.config['MYSQL_PASSWORD'] = 'password'
 app.config['MYSQL_DB'] = 'lms'
 
 mysql = MySQL(app)
