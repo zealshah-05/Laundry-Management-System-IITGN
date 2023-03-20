@@ -1,10 +1,11 @@
 # Laundry Management System IITGN
-This is Laundry Management System is specifically designed for IIT Gandhinagar, Gujarat.
+This is Laundry Management System specially designed for IIT-GN
 
 You can watch the demo of our design here : https://drive.google.com/file/d/17QOLflzjDd_zoCRmfvy6YPpxtyquLg8S/view?usp=share_link
 
 
 // There is one more directory called "Lib" which we can't able to add but here is the link of it https://drive.google.com/drive/folders/1UvqVq010p6MVA9xQRRCGjeJ7TCmVewXF?usp=share_link
+
 
 ## Problem Statement & Requirements
 
@@ -26,14 +27,75 @@ You can watch the demo of our design here : https://drive.google.com/file/d/17QO
 
 ### Responsibility of G1 :
 
-G1 is supposed to design the front end and beautify accordingly using HTML/CSS/JS, you may use any other libraries for the front end, such as Bootstrap or jQuery. But flask is mandatory. 
+G1 is supposed to design the front end and beautify accordingly using _HTML/CSS/JS_, you may use any other libraries for the front end, such as _Bootstrap_ or _jQuery_. But flask is mandatory. 
 
 
 
 ## Screenshots
 
-## 3.3 Responsibility of both G1 & G2:
-### a. Web App with Flask and MySQL Integration
+### Users Side
+
+- **Sign-In Page** : Users will use this page to Sign-In to their account, using their corresponding Email-Id and Password.
+
+![Sign-In](https://user-images.githubusercontent.com/92508807/226405572-3af1d38b-b194-4ed7-b4a7-63e08e7d107f.jpg)
+
+- **Sign-Up Page** : New users will be redirected to this page, to create a new account for Laundry Service.
+
+![Sign-Up](https://user-images.githubusercontent.com/92508807/226405567-a8ec8688-2da2-4dde-b2b4-3ed4f3772977.jpg)
+
+- **Homepage** : Users will be greeted with this homepage. With 4 options on the top ribbon.
+
+![Student_Homepage](https://user-images.githubusercontent.com/92508807/226405558-3b689355-df2e-4cd2-8247-436a82cd6a6b.jpg)
+
+- **Clothes-Status** : Users can check the status of their clothes, by clicking on the option, `Clothes-Check` from the top ribbon. This page shows the status of the submitted clothes of respective users.
+
+![Cloth_Status](https://user-images.githubusercontent.com/92508807/226405555-c10643e8-dddb-4d69-b4a2-b02c9c4f2dd3.jpg)
+
+- **Complaint** : Users can register their complaint for the clothes they have submitted for washing. Users can access this page by clicking on the link `here` from the Clothes-Status Page
+
+![Cloth_Complaint](https://user-images.githubusercontent.com/92508807/226405534-245c3cd1-bec3-4826-a13c-514750d9a5bb.jpg)
+
+- **Complaint Status Check** : Users can check their status of the complaint issued. Wheather _Pending_ or _Resolved_
+
+![Complaint_Status_Page](https://user-images.githubusercontent.com/92508807/226405515-19388223-006f-4a41-97cb-9458686bcbb3.jpg)
+
+- **Laundry-Schedule** : Users can check their schedule for their laundry submission, of their respective hostels.
+
+![Laundry_Schedule](https://user-images.githubusercontent.com/92508807/226405550-1bac7e1b-4937-4c93-b52a-93c6b6b3fd24.jpg)
+
+### Admin Side
+
+- **Admin Page** : Users with administrative priviledges will be greeted with this homepage, with access to certain actions.
+
+![Admin](https://user-images.githubusercontent.com/92508807/226405528-94b6dfe2-595e-436a-84ae-5e2081bed390.jpg)
+
+- **List of Clothes** : Admins can access the list of clothes that have been submitted by the users, by clicking on the option `Clothes` from the top ribbon. Furthermore the admins can change the statuses of the clothes gone for _Washing_ or _Washed_ or _Arrived_.
+
+![List_of_clothes](https://user-images.githubusercontent.com/92508807/226405542-cf09016a-2b7b-4815-8c1d-56d907b0d8a4.jpg)
+
+- **Clothes Add** : Admins can add clothes manually through this option, available from the top ribbon.
+
+![Cloth_Add](https://user-images.githubusercontent.com/92508807/226405523-561532a0-418a-40c3-bc5c-6967d3d1842c.jpg)
+
+- **Complaint Page** : Admins can check the complaints and its statuses (With any remarks) registered by the users through this page. 
+
+![Complaint_Page](https://user-images.githubusercontent.com/92508807/226405578-4476c800-b944-4c1f-9cb1-35281dc08932.jpg)
+
+- **Students** : Admins can check each users submission through the option `Students` from the top ribbon.
+
+![List_of_Student](https://user-images.githubusercontent.com/92508807/226405563-147a4579-1f05-41a1-b3d5-f14ccdb89f62.jpg)
+
+### Responsibility of G2 :
+
+G2 has to work on integrating MySQL in WebApp. This group works on the proper working of the backend.
+
+## Screenshots
+
+
+
+
+
+### (a). Web App with Flask and MySQL Integration
 This is a web app that integrates Flask and MySQL and allows for dynamic execution of database functions such as INSERT, UPDATE, DELETE, RENAME, and WHERE clause. The app also includes a login page with user authentication.
 
 ### Initial Setup
@@ -49,7 +111,7 @@ This is a web app that integrates Flask and MySQL and allows for dynamic executi
 
 **6.** Set up your MySQL database and update the **config.yml file** with your database credentials.
 
-You can create a MySQL database, name it **laundry_db** with the following credentials:
+You can create a MySQL database named **laundry_db** with the following credentials:
 - Username: root
 - Password: password
 - Host: localhost
@@ -105,15 +167,7 @@ the status got changed for the record of date "2023-03-19"
 ![Finally washed](https://user-images.githubusercontent.com/84655836/226213555-ef70adeb-27ed-4ebf-afbf-f442fe7bf2d2.jpeg)
 
 ### 4. Rename: 
-Before Rename:\
-![Before Rename](https://user-images.githubusercontent.com/84655836/226409807-dc2b5972-44ba-4bec-999f-fdffade07a93.jpeg)
-![Before rename 2](https://user-images.githubusercontent.com/84655836/226409804-bc30c038-00f4-4005-8579-61319e76ff82.jpeg)
-
-After Rename:\
-![After rename 1](https://user-images.githubusercontent.com/84655836/226409803-594a4a4c-bf8f-40d4-9024-7515ec0ef867.jpeg)
-![After rename 2](https://user-images.githubusercontent.com/84655836/226409797-8abda2bc-48f5-4875-b1fb-8f96bd8d374f.jpeg)
-
-**Though our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.**
+Our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.
 
 ### 5. For where clause:
 
@@ -175,22 +229,20 @@ def add_clothes():
 ```
 ## Contribution : 
 
-G1: \
-Login/ Register :             Denish \
-Homepage Student:             Zeal Shah \
-Cloth status:                 Denish \
-Complaint Add page:           Simran \
-Hostel schedule page:         Dishant \
-Complaint status check page : Distant \
-Homepage Admin:               Zeal Shah \
-List of clothes page:         Argha \
-Add Clothes:                  Denish \
-Complaints page:              Dishant \
-Student list page:            Denish \
-README.md :                   Simran 
+- [ ] G1 :
+- Login/ Register :             `Denish Trivedi` 
+- Homepage Student:             `Zeal Shah` 
+- Cloth status:                 `Denish Trivedi` 
+- Complaint Add page:           `Simran` 
+- Hostel schedule page:         `Dishant Patel` 
+- Complaint status check page : `Dishant Patel` 
+- Homepage Admin:               `Zeal Shah` 
+- List of clothes page:         `Argha` 
+- Add Clothes:                  `Denish Trivedi` 
+- Complaints page:              `Dishant Patel`
+- Student list page:            `Denish Trivedi` 
+- README.md :                   `Simran`, `Argha`
 
-G2: 
-Zeal Shah 
+- [ ] **G2** : `Zeal Shah`
 
-G3:
-Zeal Shah, Simran, Argha 
+- [ ] **G3** : `Zeal Shah`, `Simran`, `Argha` 
