@@ -7,6 +7,32 @@ You can watch the demo of our design here : https://drive.google.com/file/d/17QO
 // There is one more directory called "Lib" which we can't able to add but here is the link of it https://drive.google.com/drive/folders/1UvqVq010p6MVA9xQRRCGjeJ7TCmVewXF?usp=share_link
 
 
+## Problem Statement & Requirements
+
+1. Based on the teams formed, each team is supposed to create a web application of the proposed functionalities in the previous assignments. Each team can be divided into Group G1 and Group G2; G1 is supposed to work on the front-end and G2 on the back-end sections, respectively. You can use Flask + MySQL for developing your WebApp.
+
+2. The web app should support the dynamic execution (The changes done by the user through the web app shall be reflected in the main database and web page also) of the following functions on your database :
+- [ ]  INSERT
+- [ ]  UPDATE
+- [ ]  DELETE
+- [ ]  RENAME
+- [ ]  WHERE
+
+3. Push it to GitHub and share the link for submission
+
+4. Login page with authentication of users and stakeholders. 
+
+
+## Tasks
+
+### Responsibility of G1 :
+
+G1 is supposed to design the front end and beautify accordingly using HTML/CSS/JS, you may use any other libraries for the front end, such as Bootstrap or jQuery. But flask is mandatory. 
+
+
+
+## Screenshots
+
 
 ### a. Web App with Flask and MySQL Integration
 This is a web app that integrates Flask and MySQL and allows for dynamic execution of database functions such as INSERT, UPDATE, DELETE, RENAME, and WHERE clause. The app also includes a login page with user authentication.
