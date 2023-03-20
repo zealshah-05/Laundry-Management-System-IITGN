@@ -25,10 +25,9 @@ You can watch the demo of our design here : https://drive.google.com/file/d/17QO
 
 ## Tasks
 
-### Responsibility of G1 :
+## Responsibility of G1 :
 
 G1 is supposed to design the front end and beautify accordingly using _HTML/CSS/JS_, you may use any other libraries for the front end, such as _Bootstrap_ or _jQuery_. But flask is mandatory. 
-
 
 
 ## Screenshots
@@ -85,7 +84,7 @@ G1 is supposed to design the front end and beautify accordingly using _HTML/CSS/
 
 ![List_of_Student](https://user-images.githubusercontent.com/92508807/226405563-147a4579-1f05-41a1-b3d5-f14ccdb89f62.jpg)
 
-### Responsibility of G2 :
+## Responsibility of G2 :
 
 G2 has to work on integrating MySQL in WebApp. This group works on the proper working of the backend.
 
@@ -136,6 +135,8 @@ G2 has to work on integrating MySQL in WebApp. This group works on the proper wo
 
 ![11](https://user-images.githubusercontent.com/92508807/226425176-ba8fe019-75df-4b1c-90f3-c6f4a428fcae.jpg)
 
+
+## Responsibility of G1 and G2 :
 
 ### (a). Web App with Flask and MySQL Integration
 This is a web app that integrates Flask and MySQL and allows for dynamic execution of database functions such as INSERT, UPDATE, DELETE, RENAME, and WHERE clause. The app also includes a login page with user authentication.
@@ -210,6 +211,8 @@ the status got changed for the record of date "2023-03-19"
 
 ### 4. Rename: 
 
+Our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.
+
 #### Dummy Rename Query 
 
 - Before Rename
@@ -223,8 +226,6 @@ the status got changed for the record of date "2023-03-19"
 ![WhatsApp Image 2023-03-20 at 23 48 31](https://user-images.githubusercontent.com/92508807/226432017-2760b7ec-92ed-4016-b155-4daf814e4da8.jpg)
 
 ![WhatsApp Image 2023-03-20 at 23 48 32](https://user-images.githubusercontent.com/92508807/226432050-1bc4f738-4255-4b83-95fe-89986a72a7fb.jpg)
-
-Our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.
 
 ### 5. For where clause:
 
