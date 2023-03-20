@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaints</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='img/IIT_Gandhinagar_Logo.svg.png') }}">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0.568)">
+    <a class="navbar-brand" style="color: white; font-size: 30px;">LMS-Admin</a>
+    <button class="navbar-toggler" style="margin-right:10px" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" >
+        <a class="nav-item nav-link active" href="/homepage_admin" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/clothes" style="color: white; font-size: 18px;font-weight:400;margin-left: 30px">Clothes</a>
+        <a class="nav-item nav-link" href="/add_clothes" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Add Clothes</a>
+        <a class="nav-item nav-link" href="/complaints" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Complaints</a>
+        <a class="nav-item nav-link" href="/student_list" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Students</a>
+
+      </div>
+    </div>
+  </nav><!-- End Header -->
+
+    <div class="container clothes-container" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="card">
+            <div class="card-body" style="padding-bottom : 5px;">
+                <table class="table table-bordered text-center">
+                    <tbody>
+                      <tr class="student-row">
+                        <td>ID-Number</td>
+                        <td>Complain</td>
+                        <td>Status</td>
+                        <td>Detail</td>
+                        
+                      </tr>
+                      {% for complain in complaints %}
+                        <tr>
+                          <td> {{complain[1]}} </td>
+                          <td> {{complain[2]}} </td>
+                          <td> {{complain[3]}} </td>
+                          <td> {{complain[4]}} </td>
+                          
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table><hr>
+                  
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
