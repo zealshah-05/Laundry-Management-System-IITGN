@@ -7,17 +7,18 @@ from datetime import date
 app = Flask(__name__)
 
 # Configure db
-# db = yaml.load(open('db.yaml'))
-# app.config['MYSQL_HOST'] = db['mysql_host']
-# app.config['MYSQL_USER'] = db['mysql_user']
-# app.config['MYSQL_PASSWORD'] = db['mysql_password']
-# app.config['MYSQL_DB'] = db['mysql_db']
+db = yaml.load(open('db.yaml'))
+app.config['MYSQL_HOST'] = db['mysql_host']
+app.config['MYSQL_USER'] = db['mysql_user']
+app.config['MYSQL_PASSWORD'] = db['mysql_password']
+app.config['MYSQL_DB'] = db['mysql_db']
 app.secret_key = 'ylaundry_management_system'
 
-app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'password'
-app.config['MYSQL_DB'] = 'lms'
+# if yaml doesn't works
+# app.config['MYSQL_HOST'] = '127.0.0.1'
+# app.config['MYSQL_USER'] = 'root'
+# app.config['MYSQL_PASSWORD'] = 'password'
+# app.config['MYSQL_DB'] = 'lms'
 
 mysql = MySQL(app)
 
