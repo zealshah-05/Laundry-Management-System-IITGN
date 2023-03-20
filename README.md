@@ -32,7 +32,7 @@ G1 is supposed to design the front end and beautify accordingly using HTML/CSS/J
 
 ## Screenshots
 
-
+## 3.3 Responsibility of both G1 & G2:
 ### a. Web App with Flask and MySQL Integration
 This is a web app that integrates Flask and MySQL and allows for dynamic execution of database functions such as INSERT, UPDATE, DELETE, RENAME, and WHERE clause. The app also includes a login page with user authentication.
 
@@ -63,7 +63,6 @@ You can create a MySQL database named **laundry_db** with the following credenti
 **9.** Open a web browser and enter the following URL: **http://127.0.0.1:5000/**  
 **[Might be different based on which port you are running the localhost]**
 
-## 3.3 Responsibility of both G1 & G2:
 ### b. Screenshots of successful execution of the dynamic operations: 
 We are directly show the before and after changes reflected in our concerned table in the web app in this README file.
 ### 1. Insert:
