@@ -49,7 +49,7 @@ This is a web app that integrates Flask and MySQL and allows for dynamic executi
 
 **6.** Set up your MySQL database and update the **config.yml file** with your database credentials.
 
-You can create a MySQL database named **laundry_db** with the following credentials:
+You can create a MySQL database, name it **laundry_db** with the following credentials:
 - Username: root
 - Password: password
 - Host: localhost
