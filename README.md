@@ -155,10 +155,10 @@ This is a web app that integrates Flask and MySQL and allows for dynamic executi
 **6.** Set up your MySQL database and update the **config.yml file** with your database credentials.
 
 You can create a MySQL database named **laundry_db** with the following credentials:
-- Username: root
-- Password: password
-- Host: localhost
-- Port: 3306
+- _Username_ : `root`
+- _Password_ : `password`
+- _Host_ : `localhost`
+- _Port_ : `3306`
 
 **7.** Import the **laundry_db.sql** file into the database to create the required tables and dummy data.
 
@@ -168,7 +168,7 @@ You can create a MySQL database named **laundry_db** with the following credenti
 **9.** Open a web browser and enter the following URL: **http://127.0.0.1:5000/**  
 **[Might be different based on which port you are running the localhost]**
 
-### b. Screenshots of successful execution of the dynamic operations: 
+### (b). Screenshots of successful execution of the dynamic operations: 
 We are directly show the before and after changes reflected in our concerned table in the web app in this README file.
 ### 1. Insert:
 Before Adding Clothes:
@@ -182,36 +182,43 @@ Before Adding complaint:
 ![Before Adding complaint](https://user-images.githubusercontent.com/84655836/226204338-5ba35785-0608-4245-b371-a14594ff57d2.jpeg)
 
 After adding complaint:\
-After inserting complaint, it got reflected in admin complaint page.
+- After inserting complaint, it got reflected in admin complaint page.
+
 ![After inserting complaint ](https://user-images.githubusercontent.com/84655836/226204395-127e4d46-5b9f-47eb-aab4-727d5c15d670.jpeg)
 Similarly there are several insertions that can happen in our system.
 
 ### 2. Delete:
-Before Deleting the account of "alfred@comcast.net" at admin side
+- Before Deleting the account of "alfred@comcast.net" at admin side.
+
 ![Before Deleting the account of alfredcomcastnet at admin side](https://user-images.githubusercontent.com/84655836/226205250-6c630048-3292-444e-af50-df7eba870efe.jpeg)
 
-After deleting "alfred@comcast.net" it is not showed in list of students.
+-After deleting "alfred@comcast.net" it is not showed in list of students.
+
 ![After deleting alfred@comcast net it is not showed in list of students](https://user-images.githubusercontent.com/84655836/226205281-dfd34e18-a003-44ff-9ab5-3237f09e945c.jpeg)
 
-Before deleting the record of clothes of student "24110077"
+-Before deleting the record of clothes of student "24110077"
+
 ![Before deleting the record of clothes of student 24110077](https://user-images.githubusercontent.com/84655836/226205423-23c34e1d-94e2-46b6-a442-80bbabe77f0e.jpeg)
 
-After deleting "24110077", it's record got deleted from list.
+-After deleting "24110077", it's record got deleted from list.
+
 ![After deleting 24110077 , it's record got deleted from list](https://user-images.githubusercontent.com/84655836/226205440-a3e8c20d-db13-44d3-a069-f0eb5c652520.jpeg)
 
 ### 3. Update:
-Before updating status:
+-Before updating status:
+
 ![After deleting 24110077 , it's record got deleted from list](https://user-images.githubusercontent.com/84655836/226213012-f4356c4a-54f6-4178-91d9-d3e862f55d81.jpeg)
 
 ![After updating the status of clothes](https://user-images.githubusercontent.com/84655836/226213024-3129f1db-b856-4c21-8818-b1d13c47c5ea.jpeg)
 
-After Updating :\
-the status got changed for the record of date "2023-03-19"
+-After Updating :\
+The status got changed for the record of date "2023-03-19"
+
 ![Finally washed](https://user-images.githubusercontent.com/84655836/226213555-ef70adeb-27ed-4ebf-afbf-f442fe7bf2d2.jpeg)
 
 ### 4. Rename: 
 
-Our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.
+-Our system doesn't require any rename operation to do so we haven't implemented/shown it and there is no point to rename table, database or column.
 
 #### Dummy Rename Query 
 
@@ -229,7 +236,8 @@ Our system doesn't require any rename operation to do so we haven't implemented/
 
 ### 5. For where clause:
 
-Login Page looks like:
+-Login Page looks like:
+
 ![login page](https://user-images.githubusercontent.com/84655836/226213896-395db10d-5097-4079-82d5-8043cc6e792c.jpeg)
 In login page where clause is used to validate user and to signed in user and store the session of user
 
@@ -267,7 +275,8 @@ def login():
 ```
 ### Where clause 2:
 
-In cloth status page of student , where clause is used to only show the status of cloth of that particular user.
+-In cloth status page of student , where clause is used to only show the status of cloth of that particular user.
+
 ![Student Clothes status](https://user-images.githubusercontent.com/84655836/226382238-bb2854db-a5be-4246-b253-e031a8108b11.jpeg)
 
 ```
