@@ -1,0 +1,59 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #37517e;
+}
+
+/*-----------------Login-Page------------------*/
+.login-container {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 115vh
+}
+.login-card {
+  width : 300px;
+  margin-bottom: 2rem;
+}
+.img-1 {
+  position : absolute;
+  left : 600px;
+  top : 80px;
+}
+h3 {
+  font-family : Helvetica;
+  padding-top: 0.25rem;
+  border-bottom: solid 1px;
+  padding-bottom: 0.25rem;
+  color: #301E67;
+  }
+/*-----------------Status-Page------------------*/
+  .status-container-2 {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 1vh; 
+}
+.status-container-1 {
+  color : white; 
+  display: flex;
+  height : 50vh;
+  align-items: center;
+  justify-content: center
+}
+.status-img {
+  position : absolute;
+  left : 30px;
+  top : 15px;
+}
+.text {
+  font-size: 20px;
+  padding-left: 15px;
+}
+/*-----------------Register-Page------------------*/
+.register-container {
+  padding-top : 30px;
+  width : 500px;
+  align-items : center;
+  justify-content : center;
+  height : 90vh;
+}
