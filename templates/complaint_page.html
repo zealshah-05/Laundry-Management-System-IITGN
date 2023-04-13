@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaint Form</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='img/IIT_Gandhinagar_Logo.svg.png') }}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0.568)">
+    <a class="navbar-brand" id="title" style="color: white; font-size: 30px;">LMS-Student</a>
+    <button class="navbar-toggler " style="margin-right:10px" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" >
+        <a class="nav-item nav-link active" href="/homepage_student" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="clothes_status" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Clothes-Status</a>
+        <a class="nav-item nav-link" href="/schedule" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Schedule</a>
+        <a class="nav-item nav-link" href="/complaint_status" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Complaint-Status</a>
+        <a class="nav-item nav-link" href="/laundry_facility" style="color: white; font-size: 18px;font-weight: 400;margin-left: 30px">Other-Facility</a>
+
+      </div>
+    </div>
+  </nav><!-- End Header -->
+
+    
+
+    <div class="container clothes-container-1">
+        <div class="text-center" style="color:white;font-size: 20px;margin-top:30px;margin-bottom: 30px;">
+            Please describe your complaint regarding the laundry <br> here along with your identification.
+        </div> 
+    </div>
+
+    <div class="container clothes-container-2">
+        <div class="card clothes-card">
+            <div class="card-body" style="padding-bottom: 5px;">
+                <form  method="post" action="">
+                    <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <td>Roll No.</td>
+                            <td><input class="form-control" value="{{session['id_number']}}"></td>
+                          </tr>
+                          <tr>
+                            <td>Complaint Type</td>
+                            <td  width="70%">
+                              <label></label>
+                              <select style="width:99%;height:40px;margin-top: 0px; vertical-align: middle;" required name="complaint_type" id='s1'>
+                                <option value=''>Select Type</option>
+                                <option value=Missing>Missing</option>
+                                <option value=Torn>Torn</option>
+                                <option value=Unwashed>Unwashed</option>
+                                <option value=Others>Others</option>	
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Describe your issue here.</td>
+                            <td><input class="form-control" pattern="[^&lt;&gt;]*" name="describe" placeholder="Recieved clothes are ..."></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="d-grid text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
