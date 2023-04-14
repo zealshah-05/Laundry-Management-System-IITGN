@@ -3,7 +3,7 @@ This is Laundry Management System specifically designed for IIT Gandhinagar Camp
 
 ## 3. Tasks
 ### 3.1 Responsibility of G1:
-**For G1: 1,** We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G1: 2** 
+**For G1: 1,** We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G2: 2** 
 
 ### Feedback One
 **1.** Not all admin can see information of students and They can not delete the details of a student. For example, Laundry staff can not have this much of privilege of viewing and changing the student information but management can have.
