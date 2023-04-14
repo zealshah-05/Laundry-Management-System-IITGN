@@ -2,7 +2,7 @@
 This Laundry Management System is specifically designed for IIT Gandhinagar Campus.
 
 ## Tasks
-### Responsibility of G1:
+# G1:1
 **For G1: 1,** We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G2: 2.** 
 
 ### First Feedback
@@ -17,7 +17,7 @@ This Laundry Management System is specifically designed for IIT Gandhinagar Camp
 Sometimes, when students give their clothes for laundry, they include torn clothes. This can result in complaints from the student when the clothes are returned, stating that their clothes have been damaged. Therefore, it is necessary to address this issue.
 
 #### Feedbacks are given by Dhirajbhai (dhirajku8298@gmail.com) from Laundry Service Provider.
-### G1: 2.
+# G1: 2.
 #### A.	Students' View:
 a.	Students can see cloth-status and also add a complaint for laundry.
 
@@ -42,8 +42,9 @@ c.	Can see the complaints.
 
 d.	Can see the details of student and also admin (with High permission level) can delete the record of student.
 ![image](https://user-images.githubusercontent.com/84655836/232012596-156bdeaa-41a1-4a14-9f72-19f0dac85381.png)
-### G2: 
-### 1.
+
+# G2: 
+# 1.
 To acquire a lock in Flask in MySQL we have two locks :
 
 **A.**	Share lock for reading :
@@ -58,7 +59,7 @@ By using “FOR UPDATE” in select query we can acquire the Exclusive lock and 
 
 In this way we have added this to all our queries.
 
-### 2. SQL Injection Attacks:
+# 2. SQL Injection Attacks:
 
 A.	In login page if we insert “' or 1=1 –“ in both email and password then we directly get access to system. Because of “or” statement other conditions does not consider.
 
