@@ -71,6 +71,7 @@ After Hitting login button , here we can get access to system.
 Use parameterized query of Flask to solve this problem.
 
 Before:
+
 ![image](https://user-images.githubusercontent.com/84655836/232015834-8b8a41ce-0d7f-4563-aab5-8918ac84ae58.png)
 
 After adding parameterized query:
@@ -81,3 +82,33 @@ Now the attack is not possible.
 
 **B.**	In register page, if we insert “ '; DROP TABLE temp; -- “ in any of field then it will delete the table temp from the database.
 ![image](https://user-images.githubusercontent.com/84655836/232016398-6920123d-5a1f-4869-88db-969ce01ed273.png)
+
+It will give error if you click on register, but on Database, this click has deleted table “temp”.
+
+#### Solution to this threat:
+Use parameterize query of flask to solve this problem
+Before:
+![image](https://user-images.githubusercontent.com/84655836/232016935-858ceb8c-2dd6-4f09-aa31-49c20ad05867.png)
+
+After adding parameterized query:
+![image](https://user-images.githubusercontent.com/84655836/232017031-453999c7-edcf-4697-9092-4e2b04dfc19a.png)
+
+Now the attack is not possible.
+
+### XSS Attack:
+**A.**	If we register using the Gmail id as ```“<script>alert('XSS attack');</script> “``` and by adding other fields as random then at the time we logged in to the system , we get the alert message as we have displayed user’s email id on homepage so at that time the script will run.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
