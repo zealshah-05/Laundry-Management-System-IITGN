@@ -151,7 +151,7 @@ Flask code for adding an extra field.
 ### Final recommendation is fulfilled !!
 
 ## 3.3 Responsibility of G1 & G2:    
-## Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
+## 1. Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
 ## I. SQL Injection Attacks:
 
 A.	In login page if we insert “' or 1=1 –“ in both email and password then we directly get access to system. Because of “or” statement other conditions does not consider.
@@ -217,6 +217,9 @@ Sanitise the inputs , here we can use pattern attribute of input field to not ac
 ![image](https://user-images.githubusercontent.com/84655836/232022150-fbf3201a-d6cd-4a19-800c-42db73e180cc.png)
 
 The **pattern** attribute is used to specify a regular expression that the input value must match. In this case, the regular expression ```[^&lt;&gt;]*``` means that any character is allowed except for < and >.
+
+## 2. Show that all the relations and their constraints, finalized after the second feedback, are present and valid as per the ER diagram constructed in Assignment 1.
+
 
 
 ## Contributions : 
