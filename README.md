@@ -115,6 +115,8 @@ And due to this the admin when opens the complaint page get a popup of alert say
 Sanitise the inputs , here we can use pattern attribute of input field to not accept the “< >” brackets as:
 ![image](https://user-images.githubusercontent.com/84655836/232022150-fbf3201a-d6cd-4a19-800c-42db73e180cc.png)
 
+The **pattern** attribute is used to specify a regular expression that the input value must match. In this case, the regular expression ```[^&lt;&gt;]*``` means that any character is allowed except for < and >.
+
 
 
 
