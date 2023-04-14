@@ -80,7 +80,7 @@ After adding parameterized query:
 Now the attack is not possible.
 
 
-**B.**	In register page, if we insert ```“ '; DROP TABLE temp; -- “``` in any of field then it will delete the table temp from the database.
+**B.**	In register page, if we insert ```“ '; DROP TABLE temp; -- ”``` in any of field then it will delete the table temp from the database.
 ![image](https://user-images.githubusercontent.com/84655836/232016398-6920123d-5a1f-4869-88db-969ce01ed273.png)
 
 It will give error if you click on register, but on Database, this click has deleted table “temp”.
@@ -96,13 +96,25 @@ After adding parameterized query:
 Now the attack is not possible.
 
 ### XSS Attack:
-**A.**	If we register using the Gmail id as ```“<script>alert('XSS attack');</script> “``` and by adding other fields as random then at the time we logged in to the system , we get the alert message as we have displayed user’s email id on homepage so at that time the script will run.
+**A.**	If we register using the Gmail id as ```“<script>alert('XSS attack');</script>”``` and by adding other fields as random then at the time we logged in to the system , we get the alert message as we have displayed user’s email id on homepage so at that time the script will run.
 ![image](https://user-images.githubusercontent.com/84655836/232020988-a125aa22-f93a-40ff-824e-9b6ed5116d1f.png)
 ![image](https://user-images.githubusercontent.com/84655836/232021031-39051ef0-b2d7-4201-9493-26491cfa63d4.png)
 
-#### Solution to this issue:
+#### Solution to this issue is:
 Sanitise the input properly that can only accept valid email ids only using the input field as **type=”email”**  will ensure this.
 ![image](https://user-images.githubusercontent.com/84655836/232021251-0489e121-a48a-4f49-83fc-77ba7bcac23d.png)
+
+You can also use triggers to validate a perfect email address.
+![image](https://user-images.githubusercontent.com/84655836/232021618-35e17dce-24e4-492a-976b-5aee058a22fa.png)
+
+**B.**	At the time of registering the complaint the user can input ```“<script>alert('You are Hacked);</script>”``` this tag in describe field.
+And due to this the admin when opens the complaint page get a popup of alert saying “You are Hacked”.
+![image](https://user-images.githubusercontent.com/84655836/232021945-38352ec4-dbef-4389-9270-f58f32d314e5.png)
+![image](https://user-images.githubusercontent.com/84655836/232021986-abb6b18a-3eb0-41b5-ac7e-47bd11074378.png)
+#### Solution to this issue is:
+Sanitise the inputs , here we can use pattern attribute of input field to not accept the “< >” brackets as:
+![image](https://user-images.githubusercontent.com/84655836/232022150-fbf3201a-d6cd-4a19-800c-42db73e180cc.png)
+
 
 
 
