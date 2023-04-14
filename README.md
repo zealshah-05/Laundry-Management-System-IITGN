@@ -64,7 +64,8 @@ By using “FOR UPDATE” in select query we can acquire the Exclusive lock and 
 
 In this way we have added this to all our queries.
 ## 2. Implement the changes in the database as per the feedback received from stakeholders.
-## 3.3 Responsibility of G1 & G2:        
+## 3.3 Responsibility of G1 & G2:    
+## Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
 ## I. SQL Injection Attacks:
 
 A.	In login page if we insert “' or 1=1 –“ in both email and password then we directly get access to system. Because of “or” statement other conditions does not consider.
@@ -105,7 +106,7 @@ After adding parameterized query:
 
 Now the attack is not possible.
 
-## XSS Attack:
+## XSS Attacks:
 **A.**	If we register using the Gmail id as ```“<script>alert('XSS attack');</script>”``` and by adding other fields as random then at the time we logged in to the system , we get the alert message as we have displayed user’s email id on homepage so at that time the script will run.
 ![image](https://user-images.githubusercontent.com/84655836/232020988-a125aa22-f93a-40ff-824e-9b6ed5116d1f.png)
 
