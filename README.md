@@ -47,11 +47,20 @@ To acquire a lock in flask in MySQL we have two locks :
 
 **A.**	Share lock for reading :
  ![image](https://user-images.githubusercontent.com/84655836/232013633-1a922f06-a763-477b-ae9c-c525a4f6c07b.png)
+
 By adding “LOCK IN SHARE MODE” in select query we can acquire a shared lock.
 
 **B.**	Exclusive lock for reading and writing:
  ![image](https://user-images.githubusercontent.com/84655836/232014225-590880f2-dd58-4398-a438-c34904ab7d70.png)
+
 By using “FOR UPDATE” in select query we can acquire the Exclusive lock and can read and write to that table.
 
 In this way we have added this to all our queries.
 
+### 2. SQL Injection Attacks:
+
+A.	In login page if we insert “' or 1=1 –“ in both email and password then we directly get access to system. Because of “or” statement other conditions does not consider.
+
+![image](https://user-images.githubusercontent.com/84655836/232014904-71a96948-6669-4fb2-b4f7-254831eb7227.png)
+
+After Hitting login button , here we can get access to system.
