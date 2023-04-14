@@ -2,7 +2,7 @@
 This Laundry Management System is specifically designed for IIT Gandhinagar Campus.
 
 ## Tasks
-# G1:1
+# G1: 1
 **For G1: 1,** We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G2: 2.** 
 
 ### First Feedback
@@ -17,7 +17,7 @@ This Laundry Management System is specifically designed for IIT Gandhinagar Camp
 Sometimes, when students give their clothes for laundry, they include torn clothes. This can result in complaints from the student when the clothes are returned, stating that their clothes have been damaged. Therefore, it is necessary to address this issue.
 
 #### Feedbacks are given by Dhirajbhai (dhirajku8298@gmail.com) from Laundry Service Provider.
-# G1: 2.
+# G1: 2
 #### A.	Students' View:
 a.	Students can see cloth-status and also add a complaint for laundry.
 
@@ -59,7 +59,8 @@ By using “FOR UPDATE” in select query we can acquire the Exclusive lock and 
 
 In this way we have added this to all our queries.
 
-# 2. SQL Injection Attacks:
+# G1&G2: 1
+## SQL Injection Attacks:
 
 A.	In login page if we insert “' or 1=1 –“ in both email and password then we directly get access to system. Because of “or” statement other conditions does not consider.
 
@@ -98,7 +99,7 @@ After adding parameterized query:
 
 Now the attack is not possible.
 
-### XSS Attack:
+## XSS Attack:
 **A.**	If we register using the Gmail id as ```“<script>alert('XSS attack');</script>”``` and by adding other fields as random then at the time we logged in to the system , we get the alert message as we have displayed user’s email id on homepage so at that time the script will run.
 ![image](https://user-images.githubusercontent.com/84655836/232020988-a125aa22-f93a-40ff-824e-9b6ed5116d1f.png)
 ![image](https://user-images.githubusercontent.com/84655836/232021031-39051ef0-b2d7-4201-9493-26491cfa63d4.png)
