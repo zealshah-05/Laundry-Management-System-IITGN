@@ -98,8 +98,25 @@ Now 'Student page' in Navigation bar is not displayed because I was logged in as
 Now as I did log in with the Management ID, the 'Student' page is visible.
 ![image](https://user-images.githubusercontent.com/84655836/232074039-9cf99b8b-e0f0-4dfc-b81f-3771434e4564.png)
 
-### Feedback 1 : Recommendation 1 fulfilled !!
+### Feedback 1 : Recommendation 1 is fulfilled !!
+### Feedback 1 : Recommendation 2
+Before : It is required to add the Room number by student, which already corresponds to student's id number.
+![image](https://user-images.githubusercontent.com/84655836/232078038-128c53e9-7234-490a-8bce-3e0234c6adae.png)
 
+So, I am removing the room_no input field.
+![image](https://user-images.githubusercontent.com/84655836/232078221-a69c9ec6-dbf9-4c4b-9b68-952a7fa5dadb.png)
+
+Below, I included extra query to get the hostel number from id number and using that result's hostel number and then adding the clothes record.
+
+![image](https://user-images.githubusercontent.com/84655836/232078489-a1e80d16-1010-4781-8ad9-61bbe9bb099a.png)
+
+It works as expected; the room_no field is not there anymore.
+![image](https://user-images.githubusercontent.com/84655836/232078923-40bdfac1-3585-413f-8513-d75a37816b98.png)
+
+
+Still, the room number in the clothes status is visible by the user.
+![image](https://user-images.githubusercontent.com/84655836/232079373-534f8bc1-9352-42f7-a66d-4cda26c5cf7f.png)
+### Feedback 1: Recommendation 2 is Fulfilled!!
 ## 3.3 Responsibility of G1 & G2:    
 ## Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
 ## I. SQL Injection Attacks:
