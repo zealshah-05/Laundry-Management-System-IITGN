@@ -25,3 +25,20 @@ b.	Students can see the Hostel schedule for picking-up clothes.
 c.	Students can see their complaint's status.
 ![image](https://user-images.githubusercontent.com/84655836/232011622-032c1e79-8aa3-4f67-b702-e3c28cfd9bfd.png)
 
+#### B.	Admin View: Low Permission level workers 
+a.	Can see clothes and can also delete entry for clothes.
+
+b.	Can insert the detail of student clothes.
+
+c.	Can see the complaints.
+![image](https://user-images.githubusercontent.com/84655836/232012151-cc707b5f-2c38-449e-881c-4d2ecd95fb89.png)
+#### C.	Admin View: High Permission level workers 
+a.	Can see clothes and can also delete entry for clothes.
+
+b.	Can insert the detail of student clothes.
+
+c.	Can see the complaints.
+
+d.	Can see the details of student and also admin (with High permission level) can delete the record of student.
+![image](https://user-images.githubusercontent.com/84655836/232012596-156bdeaa-41a1-4a14-9f72-19f0dac85381.png)
+
