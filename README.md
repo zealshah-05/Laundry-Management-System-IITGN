@@ -64,7 +64,7 @@ By using “FOR UPDATE” in select query we can acquire the Exclusive lock and 
 
 In this way we have added this to all our queries.
 ## 2. Implement the changes in the database as per the feedback received from stakeholders.
-
+### Initial feedback: Recommendation 1 👇
 When a junior member of Laundry staff (not Management) used to log in:
 ![image](https://user-images.githubusercontent.com/84655836/232070991-3ca8ae06-9ce4-4b2e-b93a-482e743966ca.png)
 
@@ -99,7 +99,7 @@ Now as I did log in with the Management ID, the 'Student' page is visible.
 ![image](https://user-images.githubusercontent.com/84655836/232074039-9cf99b8b-e0f0-4dfc-b81f-3771434e4564.png)
 
 ### Feedback 1 : Recommendation 1 is fulfilled !!
-### Feedback 1 : Recommendation 2
+### Feedback 1 : Recommendation 2 👇
 Before : It is required to add the Room number by student, which already corresponds to student's id number.
 ![image](https://user-images.githubusercontent.com/84655836/232078038-128c53e9-7234-490a-8bce-3e0234c6adae.png)
 
@@ -116,7 +116,7 @@ It works as expected; the room_no field is not there anymore.
 
 Still, the room number in the clothes status is visible by the user.
 ![image](https://user-images.githubusercontent.com/84655836/232079373-534f8bc1-9352-42f7-a66d-4cda26c5cf7f.png)
-### Feedback 1: Recommendation 2 is Fulfilled!!
+### Feedback 1: Recommendation 2 is fulfilled!!
 ### Feedback 1: Recommendation 3 👇
 Before : No page informing about in-hostel laundry facility.
 ![image](https://user-images.githubusercontent.com/84655836/232082400-ca90ef16-926a-4f05-835a-bd0a136b9d61.png)
@@ -126,10 +126,27 @@ We made "Other-Facility" page.
 
 Now, one can see other laundry options.
 ![image](https://user-images.githubusercontent.com/84655836/232082929-c4be6421-136f-43ff-a530-efe465ddfd93.png)
-
-### Feedback 1: Recommendation 3 is Fulfilled !!
+### Feedback 1: Recommendation 3 is fulfilled !!
 
 ### Final Feedback 👇
+![image](https://user-images.githubusercontent.com/84655836/232084798-03c4b0b8-d1df-4068-9016-6e43ca7658fe.png)
+
+Before: Below is the Table structure
+![image](https://user-images.githubusercontent.com/84655836/232084930-cb386b34-a8a5-4ac5-a6dc-68c42d830308.png)
+
+Flask code for adding clothes (Before):
+![image](https://user-images.githubusercontent.com/84655836/232085242-c9b448f5-7b7d-4a37-9d4c-4ff7a83a8b06.png)
+
+After adding an extra field in th etable structure as torned_cloth.
+![image](https://user-images.githubusercontent.com/84655836/232085456-ebfb5236-4419-43cd-903e-c68a150fba64.png)
+
+![image](https://user-images.githubusercontent.com/84655836/232085796-5b26fcda-a498-41bd-9c2e-24b37553fe08.png)
+I also added a radio-button for torn clothes in add clothes page.
+
+![image](https://user-images.githubusercontent.com/84655836/232086177-2b501f39-4148-4df1-8b42-2285ba9b752f.png)
+Flask code for adding an extra field.
+### Final recommendation is fulfilled !!
+
 ## 3.3 Responsibility of G1 & G2:    
 ## Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
 ## I. SQL Injection Attacks:
