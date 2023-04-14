@@ -3,8 +3,8 @@ This Laundry Management System is specifically designed for IIT Gandhinagar Camp
 
 ## Tasks
 ## 3.1 Responsibility of G1:
-## 1. The G1 takes two feedbacks from the stakeholders, one initial feedback (on or before 30th March 11:59 PM), and then makes relevant changes as suggested per the first feedback, then final feedback (on or before 10th April 11:59 PM) post changes. The write-up/documentation should have screenshots before the first feedback, after the first feedback, and after the second feedback.
-#### We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G2: 2.** 
+## 1. The G1 takes two feedbacks from the stakeholders, one initial feedback (before 30th March 11:59 PM), and then makes relevant changes as suggested per the first feedback, then final feedback (before 10th April 11:59 PM) post changes. The write-up/documentation should have screenshots before the first feedback, after the first feedback, and after the second feedback.
+### We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G2: 2.** 
 
 ### First Feedback
 **1.** Not all admins should be able to see information of students and thus delete the details of a student. For example, Laundry staff can not have this much of privilege of viewing and changing the student data but College Management should have.
@@ -151,7 +151,7 @@ Flask code for adding an extra field.
 ### Final recommendation is fulfilled !!
 
 ## 3.3 Responsibility of G1 & G2:    
-## 1. Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
+## 1. Documentation and screenshots of a total of four attacks [SQL Injection and XSS] performed and the defenses against those attacks    
 ## I. SQL Injection Attacks:
 
 A.	In login page if we insert “' or 1=1 –“ in both email and password then we directly get access to system. Because of “or” statement other conditions does not consider.
