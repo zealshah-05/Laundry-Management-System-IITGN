@@ -2,8 +2,9 @@
 This Laundry Management System is specifically designed for IIT Gandhinagar Campus.
 
 ## Tasks
-# G1: 1
-**For G1: 1,** We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G2: 2.** 
+## 3.1 Responsibility of G1:
+## 1. The G1 takes two feedbacks from the stakeholders, one initial feedback (on or before 30th March 11:59 PM), and then makes relevant changes as suggested per the first feedback, then final feedback (on or before 10th April 11:59 PM) post changes. The write-up/documentation should have screenshots before the first feedback, after the first feedback, and after the second feedback.
+#### We have taken feedbacks from stakeholders to improve this system. All relevant changes recommended by the stakeholders are implemented in **G2: 2.** 
 
 ### First Feedback
 **1.** Not all admin can see information of students and They can not delete the details of a student. For example, Laundry staff can not have this much of privilege of viewing and changing the student information but management can have.
@@ -17,13 +18,14 @@ This Laundry Management System is specifically designed for IIT Gandhinagar Camp
 Sometimes, when students give their clothes for laundry, they include torn clothes. This can result in complaints from the student when the clothes are returned, stating that their clothes have been damaged. Therefore, it is necessary to address this issue.
 
 #### Feedbacks are given by Dhirajbhai (dhirajku8298@gmail.com) from Laundry Service Provider.
-# G1: 2
+## 2. Attach screenshots of different views [along with a write-up on their privileges] of the database as seen by different classes of users.
 #### A.	Students' View:
 a.	Students can see cloth-status and also add a complaint for laundry.
 
 b.	Students can see the Hostel schedule for picking-up clothes.
 
 c.	Students can see their complaint's status.
+
 ![image](https://user-images.githubusercontent.com/84655836/232011622-032c1e79-8aa3-4f67-b702-e3c28cfd9bfd.png)
 
 #### B.	Admin View: Low Permission level workers 
@@ -32,6 +34,7 @@ a.	Can see clothes and can also delete entry for clothes.
 b.	Can insert the detail of student clothes.
 
 c.	Can see the complaints.
+
 ![image](https://user-images.githubusercontent.com/84655836/232012151-cc707b5f-2c38-449e-881c-4d2ecd95fb89.png)
 #### C.	Admin View: High Permission level workers 
 a.	Can see clothes and can also delete entry for clothes.
@@ -41,11 +44,13 @@ b.	Can insert the detail of student clothes.
 c.	Can see the complaints.
 
 d.	Can see the details of student and also admin (with High permission level) can delete the record of student.
+
 ![image](https://user-images.githubusercontent.com/84655836/232012596-156bdeaa-41a1-4a14-9f72-19f0dac85381.png)
 
-# G2: 
-# 1.
-To acquire a lock in Flask in MySQL we have two locks :
+## 3.2 Responsibility of G2:
+## 1. Concurrent multi-user access: Multiple users with different roles can access and update the database concurrently. In such a scenario, the same item can not be updated by two different users. For example, locks can be applied to tables in MySQL.
+
+To acquire a lock in Flask in MySQL, we have two locks :
 
 **A.**	Share lock for reading :
  ![image](https://user-images.githubusercontent.com/84655836/232013633-1a922f06-a763-477b-ae9c-c525a4f6c07b.png)
@@ -58,9 +63,9 @@ By adding “LOCK IN SHARE MODE” in select query we can acquire a shared lock.
 By using “FOR UPDATE” in select query we can acquire the Exclusive lock and can read and write to that table.
 
 In this way we have added this to all our queries.
-
-# G1&G2: 1
-## SQL Injection Attacks:
+## 2. Implement the changes in the database as per the feedback received from stakeholders.
+## 3.3 Responsibility of G1 & G2:        
+## I. SQL Injection Attacks:
 
 A.	In login page if we insert “' or 1=1 –“ in both email and password then we directly get access to system. Because of “or” statement other conditions does not consider.
 
@@ -91,6 +96,7 @@ It will give error if you click on register, but on Database, this click has del
 
 #### Solution to this threat:
 Use parameterize query of flask to solve this problem
+
 Before:
 ![image](https://user-images.githubusercontent.com/84655836/232016935-858ceb8c-2dd6-4f09-aa31-49c20ad05867.png)
 
@@ -102,6 +108,7 @@ Now the attack is not possible.
 ## XSS Attack:
 **A.**	If we register using the Gmail id as ```“<script>alert('XSS attack');</script>”``` and by adding other fields as random then at the time we logged in to the system , we get the alert message as we have displayed user’s email id on homepage so at that time the script will run.
 ![image](https://user-images.githubusercontent.com/84655836/232020988-a125aa22-f93a-40ff-824e-9b6ed5116d1f.png)
+
 ![image](https://user-images.githubusercontent.com/84655836/232021031-39051ef0-b2d7-4201-9493-26491cfa63d4.png)
 
 #### Solution to this issue is:
@@ -114,6 +121,7 @@ You can also use triggers to validate a perfect email address.
 **B.**	At the time of registering the complaint the user can input ```“<script>alert('You are Hacked);</script>”``` this tag in describe field.
 And due to this the admin when opens the complaint page get a popup of alert saying “You are Hacked”.
 ![image](https://user-images.githubusercontent.com/84655836/232021945-38352ec4-dbef-4389-9270-f58f32d314e5.png)
+
 ![image](https://user-images.githubusercontent.com/84655836/232021986-abb6b18a-3eb0-41b5-ac7e-47bd11074378.png)
 #### Solution to this issue is:
 Sanitise the inputs , here we can use pattern attribute of input field to not accept the “< >” brackets as:
