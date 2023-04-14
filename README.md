@@ -69,9 +69,15 @@ After Hitting login button , here we can get access to system.
 (giving the value of first user as email)
 #### Solution to this threat is:
 Use parameterized query of Flask to solve this problem.
+
 Before:
 ![image](https://user-images.githubusercontent.com/84655836/232015834-8b8a41ce-0d7f-4563-aab5-8918ac84ae58.png)
 
 After adding parameterized query:
 ![image](https://user-images.githubusercontent.com/84655836/232016030-fadcf0d1-a376-43ef-936a-9c01e7446679.png)
 
+Now the attack is not possible.
+
+
+**B.**	In register page, if we insert “ '; DROP TABLE temp; -- “ in any of field then it will delete the table temp from the database.
+![image](https://user-images.githubusercontent.com/84655836/232016398-6920123d-5a1f-4869-88db-969ce01ed273.png)
