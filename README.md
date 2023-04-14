@@ -117,6 +117,19 @@ It works as expected; the room_no field is not there anymore.
 Still, the room number in the clothes status is visible by the user.
 ![image](https://user-images.githubusercontent.com/84655836/232079373-534f8bc1-9352-42f7-a66d-4cda26c5cf7f.png)
 ### Feedback 1: Recommendation 2 is Fulfilled!!
+### Feedback 1: Recommendation 3 👇
+Before : No page informing about in-hostel laundry facility.
+![image](https://user-images.githubusercontent.com/84655836/232082400-ca90ef16-926a-4f05-835a-bd0a136b9d61.png)
+
+We made "Other-Facility" page.
+![image](https://user-images.githubusercontent.com/84655836/232082686-e9d9319c-f29d-43ee-b633-cc89cd64cd82.png)
+
+Now, one can see other laundry options.
+![image](https://user-images.githubusercontent.com/84655836/232082929-c4be6421-136f-43ff-a530-efe465ddfd93.png)
+
+### Feedback 1: Recommendation 3 is Fulfilled !!
+
+### Final Feedback 👇
 ## 3.3 Responsibility of G1 & G2:    
 ## Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
 ## I. SQL Injection Attacks:
