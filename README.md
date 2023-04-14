@@ -41,4 +41,17 @@ c.	Can see the complaints.
 
 d.	Can see the details of student and also admin (with High permission level) can delete the record of student.
 ![image](https://user-images.githubusercontent.com/84655836/232012596-156bdeaa-41a1-4a14-9f72-19f0dac85381.png)
+### G2: 
+### 1.
+To acquire a lock in flask in MySQL we have two locks :
+
+**A.**	Share lock for reading :
+ ![image](https://user-images.githubusercontent.com/84655836/232013633-1a922f06-a763-477b-ae9c-c525a4f6c07b.png)
+By adding “LOCK IN SHARE MODE” in select query we can acquire a shared lock.
+
+**B.**	Exclusive lock for reading and writing:
+ ![image](https://user-images.githubusercontent.com/84655836/232014225-590880f2-dd58-4398-a438-c34904ab7d70.png)
+By using “FOR UPDATE” in select query we can acquire the Exclusive lock and can read and write to that table.
+
+In this way we have added this to all our queries.
 
