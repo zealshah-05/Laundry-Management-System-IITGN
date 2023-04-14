@@ -132,18 +132,21 @@ Now, one can see other laundry options.
 ![image](https://user-images.githubusercontent.com/84655836/232084798-03c4b0b8-d1df-4068-9016-6e43ca7658fe.png)
 
 Before: Below is the Table structure
+
 ![image](https://user-images.githubusercontent.com/84655836/232084930-cb386b34-a8a5-4ac5-a6dc-68c42d830308.png)
 
 Flask code for adding clothes (Before):
 ![image](https://user-images.githubusercontent.com/84655836/232085242-c9b448f5-7b7d-4a37-9d4c-4ff7a83a8b06.png)
 
-After adding an extra field in th etable structure as torned_cloth.
+After adding an extra field in the table structure as torned_cloth.
+
 ![image](https://user-images.githubusercontent.com/84655836/232085456-ebfb5236-4419-43cd-903e-c68a150fba64.png)
 
 ![image](https://user-images.githubusercontent.com/84655836/232085796-5b26fcda-a498-41bd-9c2e-24b37553fe08.png)
 I also added a radio-button for torn clothes in add clothes page.
 
 ![image](https://user-images.githubusercontent.com/84655836/232086177-2b501f39-4148-4df1-8b42-2285ba9b752f.png)
+
 Flask code for adding an extra field.
 ### Final recommendation is fulfilled !!
 
@@ -158,7 +161,7 @@ A.	In login page if we insert “' or 1=1 –“ in both email and password then
 After Hitting login button , here we can get access to system.
 ![image](https://user-images.githubusercontent.com/84655836/232015572-e9269f7f-8312-4732-86c1-227d20b82b8d.png)
 
-(giving the value of first user as email)
+( giving the value of first user as email)
 #### Solution to this threat is:
 Use parameterized query of Flask to solve this problem.
 
@@ -182,9 +185,11 @@ It will give error if you click on register, but on Database, this click has del
 Use parameterize query of flask to solve this problem
 
 Before:
+
 ![image](https://user-images.githubusercontent.com/84655836/232016935-858ceb8c-2dd6-4f09-aa31-49c20ad05867.png)
 
 After adding parameterized query:
+
 ![image](https://user-images.githubusercontent.com/84655836/232017031-453999c7-edcf-4697-9092-4e2b04dfc19a.png)
 
 Now the attack is not possible.
@@ -214,8 +219,22 @@ Sanitise the inputs , here we can use pattern attribute of input field to not ac
 The **pattern** attribute is used to specify a regular expression that the input value must match. In this case, the regular expression ```[^&lt;&gt;]*``` means that any character is allowed except for < and >.
 
 
+## Contributions : 
+
+- [ ] G1 :
+-  Q 1:   `Zeal, Argha, Denish` 
+-  Q 2:      `Zeal, Simran` 
 
 
+- [ ] **G2** : 
+- Q 1: `Zeal, Dishant`
+- Q 2: `Zeal`
+
+
+- [ ] **G1 and  G2** : 
+- Q 1: `Zeal`
+- Q 2: `       `
+- Readme.md: `Simran`
 
 
 
