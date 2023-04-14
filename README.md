@@ -81,6 +81,7 @@ Now the attack is not possible.
 
 
 **B.**	In register page, if we insert ```“ '; DROP TABLE temp; -- ”``` in any of field then it will delete the table temp from the database.
+
 ![image](https://user-images.githubusercontent.com/84655836/232016398-6920123d-5a1f-4869-88db-969ce01ed273.png)
 
 It will give error if you click on register, but on Database, this click has deleted table “temp”.
