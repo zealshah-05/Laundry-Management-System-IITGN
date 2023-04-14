@@ -64,6 +64,26 @@ By using “FOR UPDATE” in select query we can acquire the Exclusive lock and 
 
 In this way we have added this to all our queries.
 ## 2. Implement the changes in the database as per the feedback received from stakeholders.
+
+When Laundry low level staff logs in:
+![image](https://user-images.githubusercontent.com/84655836/232070991-3ca8ae06-9ce4-4b2e-b93a-482e743966ca.png)
+
+They can see the info of students and can also delete their info.
+![image](https://user-images.githubusercontent.com/84655836/232071455-09290af8-c8de-4338-b99d-cdd70c73adee.png)
+
+![image](https://user-images.githubusercontent.com/84655836/232071744-0b1c6a52-cd33-44ea-ba66-c27c5556c1ce.png)
+We added a permission level where 1 means all permissions and 2 means minimum permissions , All permissions (p_level=1) is given to Management and Min. permissions (p_level=2) are given to laundry staff.
+
+![image](https://user-images.githubusercontent.com/84655836/232071980-8c0e8752-6856-4f12-8b0c-e0373493535b.png)
+At the time of login we store the p_level to the session to use it later for different purpose(s).
+
+![image](https://user-images.githubusercontent.com/84655836/232072096-376d734e-aee5-442f-bc9a-18ce8483e9aa.png)
+Above, I added a condition statement that if p_level is equal to '1' then and only then 'Student' page is implemented or not.
+
+![image](https://user-images.githubusercontent.com/84655836/232072357-b37d06ec-573e-4758-b92a-3d396ab46e86.png)
+We added same conditional statement in app.py file too so that it can not be accessible by typing in URL.
+
+![image](https://user-images.githubusercontent.com/84655836/232072855-c859dd61-8367-496b-a633-1fa32d085a94.png)
 ## 3.3 Responsibility of G1 & G2:    
 ## Documentation and screenshots of a total of 2 attacks [SQL Injection and XSS] performed and the defenses against those attacks    
 ## I. SQL Injection Attacks:
