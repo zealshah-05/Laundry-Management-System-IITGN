@@ -43,7 +43,7 @@ d.	Can see the details of student and also admin (with High permission level) ca
 ![image](https://user-images.githubusercontent.com/84655836/232012596-156bdeaa-41a1-4a14-9f72-19f0dac85381.png)
 ### G2: 
 ### 1.
-To acquire a lock in flask in MySQL we have two locks :
+To acquire a lock in Flask in MySQL we have two locks :
 
 **A.**	Share lock for reading :
  ![image](https://user-images.githubusercontent.com/84655836/232013633-1a922f06-a763-477b-ae9c-c525a4f6c07b.png)
@@ -64,3 +64,14 @@ A.	In login page if we insert “' or 1=1 –“ in both email and password then
 ![image](https://user-images.githubusercontent.com/84655836/232014904-71a96948-6669-4fb2-b4f7-254831eb7227.png)
 
 After Hitting login button , here we can get access to system.
+![image](https://user-images.githubusercontent.com/84655836/232015572-e9269f7f-8312-4732-86c1-227d20b82b8d.png)
+
+(giving the value of first user as email)
+#### Solution to this threat is:
+Use parameterized query of Flask to solve this problem.
+Before:
+![image](https://user-images.githubusercontent.com/84655836/232015834-8b8a41ce-0d7f-4563-aab5-8918ac84ae58.png)
+
+After adding parameterized query:
+![image](https://user-images.githubusercontent.com/84655836/232016030-fadcf0d1-a376-43ef-936a-9c01e7446679.png)
+
