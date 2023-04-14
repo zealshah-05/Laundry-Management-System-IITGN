@@ -80,7 +80,7 @@ After adding parameterized query:
 Now the attack is not possible.
 
 
-**B.**	In register page, if we insert “ '; DROP TABLE temp; -- “ in any of field then it will delete the table temp from the database.
+**B.**	In register page, if we insert ```“ '; DROP TABLE temp; -- “``` in any of field then it will delete the table temp from the database.
 ![image](https://user-images.githubusercontent.com/84655836/232016398-6920123d-5a1f-4869-88db-969ce01ed273.png)
 
 It will give error if you click on register, but on Database, this click has deleted table “temp”.
@@ -97,6 +97,12 @@ Now the attack is not possible.
 
 ### XSS Attack:
 **A.**	If we register using the Gmail id as ```“<script>alert('XSS attack');</script> “``` and by adding other fields as random then at the time we logged in to the system , we get the alert message as we have displayed user’s email id on homepage so at that time the script will run.
+![image](https://user-images.githubusercontent.com/84655836/232020988-a125aa22-f93a-40ff-824e-9b6ed5116d1f.png)
+![image](https://user-images.githubusercontent.com/84655836/232021031-39051ef0-b2d7-4201-9493-26491cfa63d4.png)
+
+#### Solution to this issue:
+Sanitise the input properly that can only accept valid email ids only using the input field as **type=”email”**  will ensure this.
+![image](https://user-images.githubusercontent.com/84655836/232021251-0489e121-a48a-4f49-83fc-77ba7bcac23d.png)
 
 
 
