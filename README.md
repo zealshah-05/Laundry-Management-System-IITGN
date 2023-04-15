@@ -111,11 +111,11 @@ Below, I included extra query to get the hostel number from id number and using 
 
 ![image](https://user-images.githubusercontent.com/84655836/232078489-a1e80d16-1010-4781-8ad9-61bbe9bb099a.png)
 
-It works as expected; the room_no field is not there anymore.
+It works; the room_no field is not there anymore.
 ![image](https://user-images.githubusercontent.com/84655836/232078923-40bdfac1-3585-413f-8513-d75a37816b98.png)
 
 
-Still, the room number in the clothes status is visible by the user.
+The room number in the clothes page is visible after updation.
 ![image](https://user-images.githubusercontent.com/84655836/232079373-534f8bc1-9352-42f7-a66d-4cda26c5cf7f.png)
 ### Feedback 1: Recommendation 2 is fulfilled!!
 ### Feedback 1: Recommendation 3 
