@@ -222,7 +222,97 @@ Sanitise the inputs , here we can use pattern attribute of input field to not ac
 
 The **pattern** attribute is used to specify a regular expression that the input value must match. In this case, the regular expression ```[^&lt;&gt;]*``` means that any character is allowed except for < and >.
 
+
+
 ## 2. Show that all the relations and their constraints, finalized after the second feedback, are present and valid as per the ER diagram constructed in Assignment 1.
+### Relationships and their applications in website:
+
+| Relation      | Mapping cardinality | Where relationships are utilized    |
+| :-----:        |    :----:   |          :---: |
+| User and Clothes     | One to one | On the student page, this relationship is utilized for displaying the status of clothes. Each student is able to view only their own clothes, and each clothes entry corresponds to only one student.  |
+| User and complaint  | One to many       | On the student page, this relationship is employed for registering laundry-related complaints. Each student is allowed to register only one complaint, and each complaint is associated with only one corresponding student.   |
+| College management and complaints   | Partial participation with many to many relationship     | On the complaint page , this relationship is utilized so that only the admin can view the complaints.   |
+| College management and clothes   | Many to many      | On both admin pages, this relationship is used for allowing admins to edit and add clothes. Multiple staff members from the college management can edit entries in the clothes, and several clothes entries may have been edited by various college management personnel.|
+| LSP and Clothes| Many to many | In the context of the fourth relationship, on both admin pages, this association is utilized to grant administrators the ability to edit and add clothes. Several LSP members can edit entries in the clothes, and multiple clothes entries might have been edited by various personnel from the LSP.   |
+
+### Schema : User
+| Attribute    | Constraint| Why it is needed    |
+| :---:        |    :----:   |     :---: |
+| Email_id   | PRIMARY KEY    | To uniquely identify users. |
+| Mobile_no , Password , Roll_no/Emp_id  |UNIQUE, NOT NULL| This attributes cannot contain null values and must be unique. |
+| Hostel_no/Flat_no   |NOT NULL| This attribute cannot remain null.|
+| Mobile_no | CHECK(Numeric, Length=10)| Mobile number must be of 10 digit numeric|
+
+### Schema : College Management
+| Attribute   | Constraint  | Why it is needed|
+| :---:       |    :----:   |          :---: |
+| Email_id   | PRIMARY KEY  | To uniquely identify College Management.|
+| Mobile_no , Password   |UNIQUE, NOT NULL| This attributes cannot contain null values and must be unique |
+|Mobile_no |CHECK(Numeric, Length=10)   | Mobile number must be of 10 digit numeric|
+   
+### Schema : Clothes
+| Attribute   | Constraint  | Why it is needed|
+| :---:       |    :----:   |          :---: |
+| Roll_no/Emp_id & Room_no| PRIMARY KEY |To uniquely identify which record of Clothes Relation belongs to which user. |
+| No_of_clothes , Date  |NOT NULL| These attributes cannot contain null values, there must be value in this attribute.|
+
+### Schema : Complaint
+| Attribute   | Constraint  | Why it is needed|
+| :---:       |    :----:   |          :---: |
+| Complain_id| PRIMARY KEY| To uniquely identify each complaint that user had raised and it will be auto generated. |
+| Roll_no/Emp_id | FOREIGN KEY| This attribute is the Primary key of Clothes Relation. |
+
+### Schema : Hostel
+| Attribute   | Constraint  | Why it is needed|
+| :---:        |    :----:   |          :---: |
+| Hostel_name| PRIMARY KEY | To uniquely identify each hostel. |
+| Schedule_1 , Schedule_2 | NOT NULL      |Schedule cannot be null; it must contain week days.|
+
+### Schema : Laundry_service_provider
+| Attribute   | Constraint  | Why it is needed|
+| :---:        |    :----:   |          :---: |
+| Email_id| PRIMARY KEY| To uniquely identify members of Laundry service provider.|
+| Mobile_no , Password  | UNIQUE, NOT NULL | This attributes cannot contain null values and must be unique |
+| Mobile_no    | CHECK(Numeric, Length=10)  | Mobile number must be of 10 digit numeric|
+
+**Feedback 1:** Not all admins should be able to see information of students and thus delete the details of a student. For example, Laundry staff can not have this much of privilege of viewing and changing the student data but College Management should have.
+
+**Implementation:** We had to create a new relationship between college_management and user, where college_management can edit user details. And also to ensure only selected admin/collage_management has access to doing so we used attribute p_level which shows permission level to which of the admin can and can not access user/student details.
+#### Effect on relation and their constraint: (as per the ER diagram from assignment 1)
+- Since above feedback only affects user and collage_management entities, So other entities, their relation and constraint do not get affected. 
+- Since we have added the p_level attribute from the beginning (present in ER diagram), constraints do not change.
+- We have to add a new relation between user and collage_management with partial participation from collage_management with many to many relationship.
+
+### Additional Relationship to be Included in the ER Diagram:
+| Relation      | Mapping cardinality | Where relationships are utilized    |
+| :-----:        |    :----:   |          :---: |
+| College management and User  | Partial participation with many to many relationship |On the admin page (admin page with p_level = 1) this relationship is utilized to allow admin to edit details of users. Only admins with high permission level can edit multiple student records and several records from user may have been edited by several high p_level admin. |
+
+**Feedback 2:** While adding the clothes of a user, there is no need to add Room Number as it can be retrieved from the user information from users' roll-number.
+
+**Implementation:** We removed the need of providing room no. of the student to add clothes of students instead now we are using user table to get details about students room no. 
+#### Effect on relation and their constraint: (as per the ER diagram from assignment 1)
+- Since we are getting a student's room_no. information from the user table and then adding that entry to the clothes entity/table, So constraints remain the same and also doing above does not affect any relations from ER diagram. So the relations remain the same after the above operation.
+
+**Feedback 3:** Add an extra page at the student side (View) that covers other Laundry facilities provided in hostels. (eg. Smart laundry system at E Common room etc.)
+
+**Implementation:** We have developed a webpage named "Other Facilities" that displays information about the laundry facilities available on the campus, including details on the locations of washing machines and dryers.
+#### Effect on relation and their constraint: (as per the ER diagram from assignment 1)
+- Since the above operation can be done without creating a different entity in the database called ‘other_facilities’, we have just made the webpage without using anything from our database. So none of the relation or their constraint gets affected by the above operation and remains unchanged.
+
+**Final feedback:** While adding a student's clothes, a field should correspond to checking whether the provided piece of clothing is already torn. Sometimes, when students give their clothes for laundry, they include torn clothes. This can result in complaints from the student when the clothes are returned, stating that their clothes have been damaged. Therefore, it is necessary to address this issue.
+
+**Implementation:** We have added a new attribute called ‘torned_cloth’ in clothes entity and added an option to provide information about torn clothes with the help of radio buttons for response ‘yes’ and ‘no’ in ‘add clothes’ webpage.
+#### Effect on relation and their constraint: (as per the ER diagram from assignment 1)
+- We had to add a new attribute ‘torned_clothes’ in the clothes entity with NOT NULL constraint.
+- Apart from that no other relation or the constraints get affected by the above operation.
+
+### Updated constraints for clothes schema:
+| Attribute   | Constraint  | Why it is needed|
+| :---:       |    :----:   |          :---: |
+| Roll_no/Emp_id & Room_no| PRIMARY KEY |To uniquely identify which record of Clothes Relation belongs to which user. |
+| No_of_clothes , Date  |NOT NULL| These attributes cannot contain null values, there must be value in this attribute.|
+| Torned_clothes | NOT NULL| This attribute must have a value and can only be either "yes" or "no".|
 
 
 
