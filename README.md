@@ -130,7 +130,9 @@ Now, one can see other laundry options.
 ![image](https://user-images.githubusercontent.com/84655836/232082929-c4be6421-136f-43ff-a530-efe465ddfd93.png)
 ### Feedback 1: Recommendation 3 is fulfilled !!
 
-### Final Feedback 
+### Final Feedback
+
+Before: Clothes Page
 ![image](https://user-images.githubusercontent.com/84655836/232084798-03c4b0b8-d1df-4068-9016-6e43ca7658fe.png)
 
 Before: Below is the Table structure
