@@ -240,7 +240,7 @@ The **pattern** attribute is used to specify a regular expression that the input
 
 - [ ] **G1 and  G2** : 
 - Q 1: `Zeal`
-- Q 2: `       `
+- Q 2: `Dishant`
 - Readme.md: `Simran`
 
 
