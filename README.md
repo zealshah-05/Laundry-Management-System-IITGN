@@ -112,6 +112,7 @@ Below, I included extra query to get the hostel number from id number and using 
 ![image](https://user-images.githubusercontent.com/84655836/232078489-a1e80d16-1010-4781-8ad9-61bbe9bb099a.png)
 
 It works; the room_no field is not there anymore.
+
 ![image](https://user-images.githubusercontent.com/84655836/232078923-40bdfac1-3585-413f-8513-d75a37816b98.png)
 
 
