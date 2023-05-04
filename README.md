@@ -15,19 +15,19 @@ This Repository on *Laundry Management System* is specifically designed for the 
 
 # Initial Setup
 
-**1.** Clone the repository from GitHub to your local machine.: git clone `https://github.com/[your_username]/[your_repository].git`
+**1.** Clone the repository from GitHub to your local machine : git clone `https://github.com/[your_username]/[your_repository].git`
 
 **2.** Open a terminal window and navigate to the root folder of the project.
 
 **3.** Create a virtual environment using the command `python3 -m venv env_flask`
 
-**4.** Activate the virtual environment using the command **`source env_flask/bin/activate`
+**4.** Activate the virtual environment using the command `source env_flask/bin/activate`
 
 **5.** Install the required packages using the command `pip3 install -r requirements.txt`
 
 **6.** Set up your MySQL database and update the `config.yml` file with your database credentials.
 
-You can create a MySQL database named `laundry_db` with the following credentials:
+You can create a MySQL database named `laundry_db` with the following credentials :
 
 - _Username_ : `root`
 - _Password_ : `password`
