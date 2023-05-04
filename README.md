@@ -65,7 +65,7 @@ There is one more directory called "Lib" which we can't able to add but here is 
 
 ## 3.1 Responsibility of G1 :
 
-G1 is supposed to design the front end and beautify accordingly using _HTML/CSS/JS_, you may use any other libraries for the front end, such as _Bootstrap_ or _jQuery_. But flask is mandatory. 
+- G1 is supposed to design the front end and beautify accordingly using _HTML/CSS/JS_, you may use any other libraries for the front end, such as _Bootstrap_ or _jQuery_. But flask is mandatory. 
 
 ## Screenshots
 
@@ -123,7 +123,7 @@ G1 is supposed to design the front end and beautify accordingly using _HTML/CSS/
 
 ## 3.2 Responsibility of G2 :
 
-G2 has to work on integrating MySQL in WebApp. This group works on the proper working of the backend.
+- G2 has to work on integrating MySQL in WebApp. This group works on the proper working of the backend.
 
 ## Screenshots
 
@@ -174,24 +174,30 @@ G2 has to work on integrating MySQL in WebApp. This group works on the proper wo
 ## 3.3 Responsibility of G1 and G2 :
 
 ### (a). Web App with Flask and MySQL Integration
-This is a web app that integrates Flask and MySQL and allows for dynamic execution of database functions such as INSERT, UPDATE, DELETE, RENAME, and WHERE clause. The app also includes a login page with user authentication.
 
-### 1. Insert:
-Before Adding Clothes:
+- This is a web app that integrates Flask and MySQL and allows for dynamic execution of database functions such as INSERT, UPDATE, DELETE, RENAME, and WHERE clause. The app also includes a login page with user authentication.
+
+### 1. Insert :
+
+- Before Adding Clothes :
+
 ![Insert Before adding clothes](https://user-images.githubusercontent.com/84655836/226204130-2b27c221-777d-4cb2-a551-29eb9c8cc0c4.jpeg)
 
+- After Adding clothes :
 
-After Adding clothes:
 ![After Adding clothes](https://user-images.githubusercontent.com/84655836/226204299-f52ea1fe-3a8a-41f7-852a-ee09be73c53c.jpeg)
 
-Before Adding complaint:
+- Before Adding complaint :
+
 ![Before Adding complaint](https://user-images.githubusercontent.com/84655836/226204338-5ba35785-0608-4245-b371-a14594ff57d2.jpeg)
 
-After adding complaint:\
+After adding complaint:
+
 - After inserting complaint, it got reflected in admin complaint page.
 
 ![After inserting complaint ](https://user-images.githubusercontent.com/84655836/226204395-127e4d46-5b9f-47eb-aab4-727d5c15d670.jpeg)
-Similarly there are several insertions that can happen in our system.
+
+- Similarly there are several insertions that can happen in our system.
 
 ### 2. Delete:
 - Before Deleting the account of "alfred@comcast.net" at admin side.
@@ -218,7 +224,8 @@ Similarly there are several insertions that can happen in our system.
 ![After updating the status of clothes](https://user-images.githubusercontent.com/84655836/226213024-3129f1db-b856-4c21-8818-b1d13c47c5ea.jpeg)
 
 - After Updating :
-The status got changed for the record of date "2023-03-19"
+
+- The status got changed for the record of date "2023-03-19"
 
 ![Finally washed](https://user-images.githubusercontent.com/84655836/226213555-ef70adeb-27ed-4ebf-afbf-f442fe7bf2d2.jpeg)
 
@@ -245,7 +252,8 @@ The status got changed for the record of date "2023-03-19"
 - Login Page looks like:
 
 ![login page](https://user-images.githubusercontent.com/84655836/226213896-395db10d-5097-4079-82d5-8043cc6e792c.jpeg)
-In login page where clause is used to validate user and to signed in user and store the session of user
+
+- In login page where clause is used to validate user and to signed in user and store the session of user
 
 ```
 @app.route('/', methods=['GET', 'POST'])
