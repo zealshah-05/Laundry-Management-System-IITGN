@@ -55,7 +55,7 @@ There is one more directory called "Lib" which we can't able to add but here is 
 **1.** While adding a student's clothes, a field should correspond to checking whether the provided piece of clothing is already torn.
 Sometimes, when students give their clothes for laundry, they include torn clothes. This can result in complaints from the student when the clothes are returned, stating that their clothes have been damaged. Therefore, it is necessary to address this issue.
 
-#### Feedbacks are given by Dhiraj Bhai (dhirajku8298@gmail.com) from Laundry Service Provider.
+### Feedbacks are given by Dhiraj Bhai (dhirajku8298@gmail.com) from Laundry Service Provider.
 
 ## 2. Attach screenshots of different views [along with a write-up on their privileges] of the database as seen by different classes of users.
 
